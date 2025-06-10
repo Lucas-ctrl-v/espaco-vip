@@ -25,4 +25,4 @@ Tecnologias Utilizadas
 Front-End:
 HTML5: Estruturação semântica do conteúdo.
 CSS3: Estilização completa, utilizando Flexbox e Grid para layouts complexos e Media Queries para responsividade.
-JavaScript (Vanilla JS): Toda a interatividade do site, incluindo manipulação do DOM, gerenciamento de eventos, lógica do carrinho e comunicação com o localStorage. Não foram utilizados frameworks ou bibliotecas externas.
+JavaScript (Vanilla JS): Toda a interatividade do site, incluindo manipulação do DOM, gerenciamento de eventos, lógica do carrinho e comunicação com o localStorage.Todas as imagens utilizadas no projeto foram desenvolvidas por IA, sem a credação e direitos autoraris a nenhum artista. Não foram utilizados frameworks ou bibliotecas externas.
