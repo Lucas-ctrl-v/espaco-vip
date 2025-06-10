@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Logo.png">
+    <title>Espaço Vip</title>
+
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <figure>
+        <img src="img/Logo.png" alt="Espaço Vip">
+    </figure>
+
+    <div class="main-container">
+
+        <section class="secao" id="grid-secao">
+            <div class="top-bar">
+                <button id="toggle-dark">🌙 Modo Escuro</button>
+                <input type="text" id="search-bar" placeholder="Buscar serviço...">
+            </div>
+
+            <div class="produtos-grid">
+
+                <div class="servico" data-id="1" data-nome="Botox" data-preco="750.00">
+                    <a href="pages/botox.html" class="servico-link" target="_blank">
+                        <img src="img/Botox.png" alt="Botox" class="servico-img">
+                        <p class="servico-nome">Botox</p>
+                    </a>
+                    <p class="servico-preco">R$ 750,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="2" data-nome="Limpeza de Pele" data-preco="150.00">
+                    <a href="pages/LimpezadePele.html" class="servico-link" target="_blank">
+                        <img src="img/Limpeza de pele.png" alt="Limpeza de Pele" class="servico-img">
+                        <p class="servico-nome">Limpeza de Pele</p>
+                    </a>
+                    <p class="servico-preco">R$ 150,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="3" data-nome="Depilação a Laser" data-preco="250.00">
+                    <a href="pages/DepilaçãoaLazer.html" class="servico-link" target="_blank">
+                        <img src="img/Depilação a laser.png" alt="Depilação a Laser" class="servico-img">
+                        <p class="servico-nome">Depilação a Laser</p>
+                    </a>
+                    <p class="servico-preco">R$ 250,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="4" data-nome="Corrente Russa" data-preco="120.00">
+                    <a href="pages/Correnterussa.html" class="servico-link" target="_blank">
+                        <img src="img/Corrente russa.png" alt="Corrente Russa" class="servico-img">
+                        <p class="servico-nome">Corrente Russa</p>
+                    </a>
+                    <p class="servico-preco">R$ 120,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="5" data-nome="Drenagem Linfática" data-preco="180.00">
+                    <a href="pages/DrenagemLinfatica.html" class="servico-link" target="_blank">
+                        <img src="img/Drenagem Linfática.png" alt="Drenagem Linfática"
+                            class="servico-img">
+                        <p class="servico-nome">Drenagem Linfática</p>
+                    </a>
+                    <p class="servico-preco">R$ 180,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="6" data-nome="Lipoenzimática" data-preco="350.00">
+                    <a href="pages/Lipoenzimatica.html" class="servico-link" target="_blank">
+                        <img src="img/lipoenzimatica.png" alt="Lipoenzimática" class="servico-img">
+                        <p class="servico-nome">Lipoenzimática</p>
+                    </a>
+                    <p class="servico-preco">R$ 350,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="7" data-nome="Massagem Redutora" data-preco="160.00">
+                    <a href="pages/massagemRedutora.html" class="servico-link" target="_blank">
+                        <img src="img/Massagem redutora.png" alt="Massagem Redutora" class="servico-img">
+                        <p class="servico-nome">Massagem Redutora</p>
+                    </a>
+                    <p class="servico-preco">R$ 160,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="8" data-nome="Microagulhamento" data-preco="300.00">
+                    <a href="pages/Microagulhamento.html" class="servico-link" target="_blank">
+                        <img src="img/Microagulhamento.png" alt="Microagulhamento" class="servico-img">
+                        <p class="servico-nome">Microagulhamento</p>
+                    </a>
+                    <p class="servico-preco">R$ 300,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="9" data-nome="Peeling Químico" data-preco="280.00">
+                    <a href="pages/PeelingQuimico.html" class="servico-link" target="_blank">
+                        <img src="img/Pelling.png" alt="Peeling Químico" class="servico-img">
+                        <p class="servico-nome">Peeling Químico</p>
+                    </a>
+                    <p class="servico-preco">R$ 280,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="10" data-nome="Podologia" data-preco="90.00">
+                    <a href="pages/Podologia.html" class="servico-link" target="_blank">
+                        <img src="img/Podologia.png" alt="Podologia" class="servico-img">
+                        <p class="servico-nome">Podologia</p>
+                    </a>
+                    <p class="servico-preco">R$ 90,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="11" data-nome="Pós Operatório" data-preco="200.00">
+                    <a href="pages/pos-operatorio.html" class="servico-link" target="_blank">
+                        <img src="img/Pos Operarório.png" alt="Pós Operatório" class="servico-img">
+                        <p class="servico-nome">Pós Operatório</p>
+                    </a>
+                    <p class="servico-preco">R$ 200,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="12" data-nome="Preenchimento Labial" data-preco="850.00">
+                    <a href="pages/PreenchimentoLabial.html" class="servico-link" target="_blank">
+                        <img src="img/Preenchimento Labial.png" alt="Preenchimento Labial"
+                            class="servico-img">
+                        <p class="servico-nome">Preenchimento Labial</p>
+                    </a>
+                    <p class="servico-preco">R$ 850,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="13" data-nome="Pump-up" data-preco="130.00">
+                    <a href="pages/Pump-up.html" class="servico-link" target="_blank">
+                        <img src="img/pump-up.png" alt="Pump-up" class="servico-img">
+                        <p class="servico-nome">Pump-up</p>
+                    </a>
+                    <p class="servico-preco">R$ 130,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+                <div class="servico" data-id="14" data-nome="Skinbooster" data-preco="450.00">
+                    <a href="pages/Skinbooster.html" class="servico-link" target="_blank">
+                        <img src="img/Skinboooster.png" alt="Skinbooster" class="servico-img">
+                        <p class="servico-nome">Skinbooster</p>
+                    </a>
+                    <p class="servico-preco">R$ 450,00</p>
+                    <button class="add-carrinho-btn">Adicionar</button>
+                </div>
+
+            </div>
+        </section>
+
+        <aside class="carrinho">
+            <h2>🛒 Meu Carrinho</h2>
+            <div id="carrinho-itens">
+                <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+            </div>
+            <div class="carrinho-total">
+                <h3>Total: <span id="carrinho-total">R$ 0,00</span></h3>
+            </div>
+            <button id="finalizar-compra" class="btn-finalizar">Finalizar Agendamento</button>
+            <button id="limpar-carrinho" class="btn-limpar">Limpar Carrinho</button>
+        </aside>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/Logo.png" alt="Espaço Vip - Rodapé" />
+            </div>
+            <div class="footer-contacts">
+                <p>
+                    <span class="icon">📷</span>
+                    <a href="https://www.instagram.com/espacovip.estetica" target="_blank">@espacovip.estetica</a>
+                </p>
+                <p>
+                    <span class="icon">📞</span>
+                    <a href="tel:+5531984171754">+55 (31) 98417-1754</a>
+                </p>
+                <p>
+                    <span class="icon">✨</span>
+                    <a href="pages/sobre.html">Quem Somos</a>
+                </p>
+            </div>
+            <div class="footer-address">
+                <p><strong>Endereço:</strong> Rua Corrêa e Castro, 36 - Santa Cruz, Belo Horizonte</p>
+                <a href="https://www.google.com/maps/place/R.+Corr%C3%AAa+e+Castro,+36+-+Santa+Cruz,+Belo+Horizonte+-+MG,+31155-110"
+                    target="_blank" class="map-link">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.3638570817257!2d-43.94474358490718!3d-19.874992680595825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69a7f6b5e75ad%3A0x4c4320ef2229a331!2sR.%20Corr%C3%AAa%20e%20Castro%2C%2036%20-%20Santa%20Cruz%2C%20Belo%20Horizonte%20-%20MG%2C%2031155-110!5e0!3m2!1spt-BR!2sbr!4v1685728894106!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+            </div>
+        </div>
+        <div style="text-align: center; padding-top: 20px; font-size: 0.85rem; color: #777;">
+            <p>© <span id="currentYear"></span> Espaço Vip. Todos os direitos reservados.</p>
+            <p style="margin-top: 8px;">
+                Desenvolvido por <a href="pages/desenvolvimeto.html" target="_blank"
+                    style="color: inherit; text-decoration: none;" target="_blank"
+                    style="color: inherit; text-decoration: none;">Lucas</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Seletores
+            const produtosGrid = document.querySelector('.produtos-grid');
+            const carrinhoItensContainer = document.getElementById('carrinho-itens');
+            const carrinhoVazioMsg = document.getElementById('carrinho-vazio');
+            const totalCarrinhoSpan = document.getElementById('carrinho-total');
+            const limparCarrinhoBtn = document.getElementById('limpar-carrinho');
+            const finalizarCompraBtn = document.getElementById('finalizar-compra');
+            const toggleDarkBtn = document.getElementById('toggle-dark');
+            const searchBar = document.getElementById('search-bar');
+            const currentYearSpan = document.getElementById('currentYear');
+
+            let carrinho = JSON.parse(localStorage.getItem('carrinhoEspacoVip')) || [];
+
+            // Funções do Carrinho
+            function renderizarCarrinho() {
+                carrinhoItensContainer.innerHTML = '';
+                let total = 0;
+                if (carrinho.length === 0) {
+                    carrinhoVazioMsg.style.display = 'block';
+                } else {
+                    carrinhoVazioMsg.style.display = 'none';
+                    carrinho.forEach(item => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'carrinho-item';
+                        itemDiv.innerHTML = `
+                            <div class="carrinho-item-info">
+                                <p>${item.nome} (x${item.quantidade})</p>
+                                <span>R$ ${parseFloat(item.preco).toFixed(2).replace('.', ',')}</span>
+                            </div>
+                            <button class="remover-item-btn" data-id="${item.id}">🗑️</button>
+                        `;
+                        carrinhoItensContainer.appendChild(itemDiv);
+                        total += item.preco * item.quantidade;
+                    });
+                }
+                totalCarrinhoSpan.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+                salvarCarrinhoNoLocalStorage();
+            }
+
+            function salvarCarrinhoNoLocalStorage() {
+                localStorage.setItem('carrinhoEspacoVip', JSON.stringify(carrinho));
+            }
+
+            function adicionarAoCarrinho(id, nome, preco) {
+                const itemExistente = carrinho.find(item => item.id === id);
+                if (itemExistente) {
+                    itemExistente.quantidade++;
+                } else {
+                    carrinho.push({ id, nome, preco: parseFloat(preco), quantidade: 1 });
+                }
+                renderizarCarrinho();
+            }
+
+            function removerDoCarrinho(id) {
+                const itemIndex = carrinho.findIndex(item => item.id === id);
+                if (itemIndex > -1) {
+                    if (carrinho[itemIndex].quantidade > 1) {
+                        carrinho[itemIndex].quantidade--;
+                    } else {
+                        carrinho.splice(itemIndex, 1);
+                    }
+                }
+                renderizarCarrinho();
+            }
+
+            function handleSearch() {
+                const termo = searchBar.value.toLowerCase();
+                const cards = document.querySelectorAll('.produtos-grid .servico');
+                cards.forEach(card => {
+                    const texto = card.dataset.nome.toLowerCase();
+                    card.style.display = texto.includes(termo) ? 'flex' : 'none';
+                });
+            }
+
+            // Event Listeners
+            if (produtosGrid) {
+                produtosGrid.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('add-carrinho-btn')) {
+                        const servicoCard = e.target.closest('.servico');
+                        const { id, nome, preco } = servicoCard.dataset;
+                        adicionarAoCarrinho(id, nome, preco);
+                    }
+                });
+            }
+
+            if (carrinhoItensContainer) {
+                carrinhoItensContainer.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('remover-item-btn')) {
+                        const id = e.target.dataset.id;
+                        removerDoCarrinho(id);
+                    }
+                });
+            }
+
+            if (limparCarrinhoBtn) {
+                limparCarrinhoBtn.addEventListener('click', () => {
+                    carrinho = [];
+                    renderizarCarrinho();
+                });
+            }
+
+            if (finalizarCompraBtn) {
+                finalizarCompraBtn.addEventListener('click', () => {
+                    if (carrinho.length === 0) {
+                        alert("Seu carrinho está vazio!");
+                        return;
+                    }
+                    let mensagem = "Olá, Espaço Vip! Gostaria de agendar os seguintes serviços:\n\n";
+                    let total = 0;
+                    carrinho.forEach(item => {
+                        const subtotal = item.preco * item.quantidade;
+                        mensagem += `- ${item.nome} (x${item.quantidade}) - R$ ${subtotal.toFixed(2).replace('.', ',')}\n`;
+                        total += subtotal;
+                    });
+                    mensagem += `\n*Total: R$ ${total.toFixed(2).replace('.', ',')}*`;
+                    const telefone = "5531984171754";
+                    const urlWhatsApp = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+                    window.open(urlWhatsApp, '_blank');
+                });
+            }
+
+            if (toggleDarkBtn) {
+                toggleDarkBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark-mode');
+                    if (document.documentElement.classList.contains('dark-mode')) {
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+
+            if (searchBar) {
+                searchBar.addEventListener('input', handleSearch);
+            }
+
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+
+            // Inicialização
+            renderizarCarrinho();
+        });
+    </script>
+</body>
+
+</html>

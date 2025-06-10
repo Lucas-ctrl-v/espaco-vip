@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/Logo.png">
+    <title>Sobre Nós | Espaço Vip</title>
+
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <figure>
+        <img src="../img/Logo.png" alt="Espaço Vip">
+    </figure>
+
+    <main class="page-content">
+
+        <div class="top-bar" style="margin-bottom: 30px; justify-content: space-between;">
+            <a href="../index.html" class="btn-finalizar" style="width: auto; text-decoration: none;">← Voltar aos
+                Serviços</a>
+            <button id="toggle-dark">🌙 Modo Escuro</button>
+        </div>
+
+        <h2>Quem Somos</h2>
+
+        <p>
+            A Clínica Espaço VIP é um lugar pensado com carinho para cuidar da sua beleza, saúde e bem-estar. Localizada
+            na Rua Corrêa e Castro, nº 36, no bairro Santa Cruz – Belo Horizonte, oferecemos um atendimento humanizado e
+            personalizado, feito por profissionais qualificados: fisioterapeuta, biomédica e podóloga.
+        </p>
+        <p>
+            Aqui, unimos tecnologia e cuidado para oferecer os melhores tratamentos faciais, corporais, podologia e
+            depilação a laser com o aparelho Light Sheer — tudo para valorizar sua autoestima e realçar sua beleza
+            natural.
+        </p>
+        <p>
+            Nosso espaço é acolhedor, seguro e preparado para que você se sinta à vontade em cada momento do seu
+            atendimento. Você merece esse cuidado. Seja bem-vinda ao seu momento VIP!
+        </p>
+        <p>
+            <strong>📅 Atendimento:</strong> de segunda a sexta, das 9h às 19h, e aos sábados, das 8h às 12h.
+        </p>
+
+        <h3>Por que Confiar em Nossos Serviços?</h3>
+        <p>
+            Porque aqui, cada cliente é única. Trabalhamos com dedicação, ética e responsabilidade, buscando sempre os
+            melhores resultados. Nossos procedimentos são realizados com segurança, profissionalismo e muito carinho,
+            respeitando o seu tempo, sua pele e seus objetivos.
+        </p>
+        <p>
+            Na Clínica Espaço VIP, você encontra mais do que estética: encontra cuidado de verdade.
+        </p>
+
+        <div
+            style="text-align: center; margin-top: 40px; padding: 20px; background-color: #f8f8f8; border-radius: 8px;">
+            <p style="font-size: 1.2em; font-style: italic; color: #20c7bf; margin: 0;">
+                Porque beleza de verdade começa com cuidado — e aqui, você é VIP todos os dias.
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://wa.me/5531984171754?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20avaliação."
+                target="_blank" class="btn-finalizar"
+                style="text-decoration: none; padding: 15px 30px; font-size: 1.1em;">Agende sua Avaliação</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../img/Logo.png" alt="Espaço Vip - Rodapé" />
+            </div>
+            <div class="footer-contacts">
+                <p>
+                    <span class="icon">📷</span>
+                    <a href="https://www.instagram.com/espacovip.estetica" target="_blank">@espacovip.estetica</a>
+                </p>
+                <p>
+                    <span class="icon">📞</span>
+                    <a href="tel:+5531984171754">+55 (31) 98417-1754</a>
+                </p>
+                <p>
+                    <span class="icon">✨</span>
+                    <a href="sobre.html">Quem Somos</a>
+                </p>
+            </div>
+            <div class="footer-address">
+                <p><strong>Endereço:</strong> Rua Corrêa e Castro, 36 - Santa Cruz, Belo Horizonte</p>
+                <a href="https://www.google.com/maps/place/R.+Corr%C3%AAa+e+Castro,+36+-+Santa+Cruz,+Belo+Horizonte+-+MG,+31150-180"
+                    target="_blank" class="map-link">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.122621147605!2d-43.92440132386267!3d-19.8770014364491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69b1705e4554b%3A0x8e8a6c836f32e2b3!2sR.%20Corr%C3%AAa%20e%20Castro%2C%2036%20-%20Santa%20Cruz%2C%20Belo%20Horizonte%20-%20MG%2C%2031150-180!5e0!3m2!1spt-BR!2sbr!4v1683833939384!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+            </div>
+        </div>
+        <div style="text-align: center; padding-top: 20px; font-size: 0.85rem; color: #777;">
+            <p>© <span id="currentYear"></span> Espaço Vip. Todos os direitos reservados.</p>
+            <p style="margin-top: 8px;">
+                Desenvolvido por <a href="desenvolvimeto.html" style="color: inherit; text-decoration: none;">Lucas
+                    Vinícius</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleDarkBtn = document.getElementById('toggle-dark');
+            const currentYearSpan = document.getElementById('currentYear');
+
+            if (toggleDarkBtn) {
+                toggleDarkBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark-mode');
+                    if (document.documentElement.classList.contains('dark-mode')) {
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

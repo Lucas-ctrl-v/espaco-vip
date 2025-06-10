@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/Logo.png">
+    <title>Sobre o Desenvolvimento | Espaço Vip</title>
+
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <figure>
+        <img src="../img/Logo.png" alt="Espaço Vip">
+    </figure>
+
+    <main class="page-content">
+
+        <div class="top-bar" style="margin-bottom: 30px; justify-content: space-between;">
+            <a href="../index.html" class="btn-finalizar" style="width: auto; text-decoration: none;">←
+                Voltar ao site</a>
+            <button id="toggle-dark">🌙 Modo Escuro</button>
+        </div>
+
+        <h2>Sobre o Desenvolvimento deste Site</h2>
+        <p>
+            Esta página é dedicada a apresentar o profissional responsável pela criação e desenvolvimento do site da
+            <strong>Espaço Vip</strong>.
+        </p>
+
+        <h3>Lucas Vinícius</h3>
+        <h4>Desenvolvedor Web</h4>
+
+        <p>
+            Olá! Eu sou Lucas, um desenvolvedor apaixonado por criar experiências digitais que são ao mesmo tempo
+            bonitas, funcionais e rápidas. Minha filosofia é construir sites limpos e intuitivos que ajudam negócios
+            como a Espaço Vip a se conectarem com seu público de forma eficaz.
+        </p>
+
+        <h4>Sobre este Projeto</h4>
+        <p>
+            O site da Espaço Vip foi desenvolvido do zero, com o objetivo de criar uma vitrine digital para seus
+            serviços e um sistema prático para agendamentos, integrado diretamente com o WhatsApp da clínica.
+        </p>
+        <ul>
+            <li><strong>Tecnologias Utilizadas:</strong> HTML5, CSS3 e JavaScript puro.</li>
+            <li><strong>Destaques:</strong> Design responsivo para celulares, modo escuro e um carrinho de agendamentos
+                funcional que facilita o contato do cliente.</li>
+        </ul>
+
+        <h3 style="margin-top: 40px;">Gostou do que viu? Vamos conversar!</h3>
+        <p>
+            Se você precisa de um site para o seu negócio ou projeto, ficarei feliz em ajudar. Entre em contato através
+            dos links abaixo para discutirmos suas ideias.
+        </p>
+
+        <div class="dev-contacts" style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p style="font-size: 1.1em;">
+                👔 <strong><a
+                        href="https://www.linkedin.com/in/lucas-vin%C3%ADcius-albuquerque-vieira-21b4812b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXbP7uZVMTp2NqrPWtuSGvQ%3D%3D"
+                        target="_blank">Meu LinkedIn</a></strong>
+            </p>
+            <p style="font-size: 1.1em;">
+                💻 <strong><a href="https://[LINK_DO_SEU_GITHUB]" target="_blank">Meu GitHub</a></strong>
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../img/Logo.png" alt="Espaço Vip - Rodapé" />
+            </div>
+            <div class="footer-contacts">
+                <p>
+                    <span class="icon">📷</span>
+                    <a href="https://www.instagram.com/espacovip.estetica" target="_blank">@espacovip.estetica</a>
+                </p>
+                <p>
+                    <span class="icon">📞</span>
+                    <a href="tel:+5531984171754">+55 (31) 98417-1754</a>
+                </p>
+                <p>
+                    <span class="icon">✨</span>
+                    <a href="../sobre.html">Quem Somos</a>
+                </p>
+            </div>
+            <div class="footer-address">
+                <p><strong>Endereço:</strong> Rua Corrêa e Castro, 36 - Santa Cruz, Belo Horizonte</p>
+                <a href="https://www.google.com/maps/place/R.+Corr%C3%AAa+e+Castro,+36+-+Santa+Cruz,+Belo+Horizonte+-+MG,+31155-110"
+                    target="_blank" class="map-link">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.3638570817257!2d-43.94474358490718!3d-19.874992680595825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69a7f6b5e75ad%3A0x4c4320ef2229a331!2sR.%20Corr%C3%AAa%20e%20Castro%2C%2036%20-%20Santa%20Cruz%2C%20Belo%20Horizonte%20-%20MG%2C%2031155-110!5e0!3m2!1spt-BR!2sbr!4v1685728894106!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+            </div>
+        </div>
+        <div style="text-align: center; padding-top: 20px; font-size: 0.85rem; color: #777;">
+            <p>© <span id="currentYear"></span> Espaço Vip. Todos os direitos reservados.</p>
+            <p style="margin-top: 8px;">
+                Desenvolvido por <a href="desenvolvimeto.html"
+                    style="color: inherit; text-decoration: none;">Lucas</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleDarkBtn = document.getElementById('toggle-dark');
+            const currentYearSpan = document.getElementById('currentYear');
+
+            if (toggleDarkBtn) {
+                toggleDarkBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark-mode');
+                    if (document.documentElement.classList.contains('dark-mode')) {
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+
+</html>
